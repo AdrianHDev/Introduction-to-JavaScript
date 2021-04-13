@@ -283,13 +283,17 @@ Using the vowelCounter function below do the following:
 
 
 function vowelCounter(string) {
-    let vowelCount = 0;
-    const vowels = ['a','e','i','o','u']
-    vowels.forEach((vowel) => {
-      string.includes(vowel) ? vowelCount++ : false;
-    })
+    const vowels = ['a','e','i','o','u'];
+    return includeCounter(vowels, string);
 }
 
+const includeCounter = (arrOfChars, stringToCount) => {
+  let charCount = 0;
+  arrOfChars.forEach((char) => {
+    string.includes(char) ? charCount++ : false;
+  })
+  return charCount;
+}
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
